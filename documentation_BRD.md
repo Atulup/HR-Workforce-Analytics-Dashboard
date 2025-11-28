@@ -124,7 +124,19 @@ CALCULATE(
 ## 12. Technologies Used
 Power BI, Power Query, DAX, CSV Dataset
 
-## 13. Repository Structure
+# DATA MODEL DOCUMENTATION
+
+## 13. Data Model Purpose
+To structure HR employee data in an analysis-ready format enabling accurate KPI calculations, segmentation, and interactive reporting in Power BI.
+
+## 14. Data Model Type
+- Single denormalized **flat table (star-like)** model  
+- One main fact table: **HR_Analytics**  
+- All attributes act as embedded dimensions  
+
+This approach ensures high performance, simplicity, and clean DAX logic.
+
+## 15. Repository Structure
 /data/hr_data.csv
 /images/dashboard_screenshot.png
 /pbix/HR_Insights_And_Trends.pbix
